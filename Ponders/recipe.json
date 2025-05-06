@@ -1,0 +1,78 @@
+[
+{
+    "Recipe": "Chocolate Chip Cookies",
+        "Ingredients":{
+            "butter/softened": "1lb",
+            "Brown Sugar": "1 1/2 cup",
+            "White SUgar": "1 cup",
+            "Eggs": 3,
+            "Vanilla": "2 tsp",
+            "Baking Soda": "1 1/2 tsp",
+            "Salt": "1/2 tsp",
+            "Flour": "5 Cups",
+            "Choco`late Chips": "2cups"  
+        },
+        "Directions":{
+            "1":"Cream the butter and sugar together, then beat in the eggs and vanilla",
+            "2":"Mix in the salt, soda and flour",
+            "3":"Add chocolate chips",
+            "4":"Bake 8-10 minute at 350 F"
+        },
+        "Name": "Chocolate Chip Cookies",
+        "Ingredientes":[
+            {
+                "unit":"pound",
+                "qty":1,
+                "ingredient":"butter-softened"
+            },
+            {
+                "unit":"cup",
+                "qty":1.5,
+                "ingredient":"brown sugar"
+            },
+            {
+                "unit":"cup",
+                "qty":1,
+                "ingredient":"sugar"
+            },
+            {
+                "unit": "",
+                "qty":3,
+                "ingredient":"egg"
+            },
+            {
+                "unit":"tsp",
+                "qty":2,
+                "ingredient":"Vanilla"
+            },
+            {
+                "unit":"tsp",
+                "qty":1.5,
+                "ingredient":"Baking Soda"
+            },
+            {
+                "unit":"tsp",
+                "qty":0.5,
+                "ingredient":"Salt"
+            },
+            {
+                "unit":"cups",
+                "qty":5,
+                "ingredient":"Flour"
+            },
+            {
+                "unit":"cups",
+                "qty":2,
+                "ingredient":"Chocolate Chips"
+            }
+        ],
+        "Instructions":[
+            "Cream the butter and sugar together, then beat in the eggs and vanilla",
+            "Mix in the salt, soda and flour",
+            "Add chocolate chips",
+            "Bake 8-10 minute at 350 F"
+        ]
+
+
+}
+]
