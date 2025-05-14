@@ -98,3 +98,73 @@ function parkInfoTemplate(info) {
   setParkIntro(parkData);
   setParkInfoLinks(parkInfoLinks);
   setFooter(parkData);
+
+  export async function getParkData() {
+    let data = {}
+  const response = await fetch(baseUrl + "parks" + "?parkCode=yell");
+  // check to make sure the reponse was ok.
+  if (response.ok) {
+    // convert to JSON
+    data = await response.json();
+  } else throw new Error("response not ok")
+    return data;
+  
+}
+{
+    "error": {
+      "code": "API_KEY_MISSING",
+      "message": "An API key was not provided. Please get one at https://www.nps.gov/subjects/developer/get-started.htm"
+    }
+  }
+  const baseUrl = "https://developer.nps.gov/api/v1/";
+const apiKey = import.meta.env.VITE_NPS_API_KEY;
+export async function getParkData() {
+  const options = {
+    method: "GET",
+    headers: {
+      "X-Api-Key": apiKey
+    }
+  };
+  const data = {};
+  const response = await fetch(baseUrl + "parks" + "?parkCode=yell", options);
+  // check to make sure the reponse was ok.
+  if (response.ok) {
+    // convert to JSON
+    data = await response.json();
+  } else throw new Error("response not ok");
+    return data;
+  
+}
+
+async function init() {
+    const parkData = await getParkData();
+  
+    setHeaderFooter(parkData);
+    setParkIntro(parkData);
+    setParkInfoLinks(parkInfoLinks);
+  }
+  
+  init();
+  {
+    data:[{id: "F58C6D24-8D10-4573-9826-65D42B8B83AD", url: "https://www.nps.gov/yell/index.htm",…}]
+    limit:"50",
+    start:"0",
+    total:"1"
+}
+export async function getParkData() {
+    const options = {
+      method: "GET",
+      headers: {
+        "X-Api-Key": apiKey
+      }
+    };
+    let data = {};
+    const response = await fetch(baseUrl + "parks" + "?parkCode=yell", options);
+    // check to make sure the reponse was ok.
+    if (response.ok) {
+      // convert to JSON
+      data = await response.json();
+    } else throw new Error("response not ok");
+    // return just the first row of the data object
+    return data.data[0];
+  }
